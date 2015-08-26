@@ -71,6 +71,10 @@ h6 {
   margin: 0 0 1rem;
 }
 
+h1 {
+  margin-bottom: 4rem;
+}
+
 p {
   margin: 0 0 1rem;
   font-size: 1rem;
@@ -90,4 +94,19 @@ p {
 
 .name {
   color: $name;
+}
+
+hr {
+  padding: 0;
+  border: 0;
+  border-top: .5rem double $white;
+}
+
+.professional {
+  margin-top: 3rem;
+}
+
+footer {
+  font-size: 2rem;
+  margin: 3rem 0 2rem;
 }
