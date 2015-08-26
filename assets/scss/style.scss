@@ -22,6 +22,10 @@ $name: #3D8D9C;
     display: inline-block;
     width: 50%;
   }
+
+  img {
+    max-height: 300px;
+  }
 }
 
 html, body {
@@ -36,6 +40,7 @@ body {
 }
 
 .container {
+  //background-image: repeating-linear-gradient(transparent 0px, transparent 29px, $text 29px, $text 30px);
   max-width: 1280px;
   margin: 3rem auto 6rem;
   padding: 0 2rem;
@@ -44,39 +49,35 @@ body {
 h1 {
   font-size: 3rem;
   line-height: 4rem;
-  border-top: 1rem solid $white;
-  border-bottom: 2rem solid $white;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  border-top: 1.5rem solid $white;
+  border-bottom: 1.5em solid $white;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 h2 {
   font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: -.3rem;
 }
 
 h3 {
   font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h4 {
-  font-size: 1.25rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   font-size: 1rem;
 }
 
@@ -99,7 +100,7 @@ p {
 hr {
   padding: 0;
   border: 0;
-  border-top: .5rem double $white;
+  border-top: 1rem double $white;
 }
 
 .professional {
