@@ -4,6 +4,7 @@ A modern responsive HTML5 site template. This is a single page layout made as a 
 Features:
 
 - `rem` units used, so the page is zoomable freely
+- vetical rhytm for content
 - normalize css used
 - HTML5
 - CSS3
