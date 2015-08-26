@@ -4,11 +4,35 @@
 $text: #444;
 $bg: #80EFA6;
 $white: #FFF;
+$section: #7E858A;
+$name: #3D8D9C;
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+.wrapper {
+  @include clearfix;
+
+  .text, img {
+    display: inline-block;
+    width: 50%;
+  }
+}
 
 html, body {
   background: $bg;
   color: $text;
   font: normal 20px/30px 'Source Sans Pro', sans-serif;
+}
+
+body {
+  border-top: 4rem solid $section;
+  border-bottom: 11rem solid $section;
 }
 
 .container {
@@ -19,6 +43,7 @@ html, body {
 
 h1 {
   font-size: 3rem;
+  line-height: 4rem;
   border-top: 1rem solid $white;
   border-bottom: 2rem solid $white;
   padding-bottom: 2rem;
@@ -37,7 +62,32 @@ h4 {
   font-size: 1.25rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1rem;
+}
+
 p {
   margin: 0 0 1rem;
   font-size: 1rem;
+}
+
+.fa {
+  color: $section;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.name {
+  color: $name;
 }
